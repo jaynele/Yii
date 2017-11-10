@@ -123,4 +123,15 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+
+    /**
+     * 创建第一个控制器并显示第一个页面
+     */
+    public function actionSay($message = 'hello')
+    {
+        return $this->render('say', ['message' => $message]);
+    }
+
+
 }
